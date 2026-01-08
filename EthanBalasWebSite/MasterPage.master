@@ -4,19 +4,85 @@
 
 <html>
 <head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder id="head" runat="server">
+    <title>Space</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+        img gallery {
+            width: 45px;
+            height: 40px;
+        }
+
+        .myTable {
+            border: 4px solid black;
+            border-collapse: collapse;
+            background-color: gray;
+        }
+
+        }
+    </style>
 </head>
-<body>
-    <h1>master start</h1>
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
-    </form>
-    <h1>master end</h1>
+<body dir="rtl" style="background-color: black">
+    <!--https://www.w3schools.com/html/html_tables.asp-->
+    <center>
+        <h1 style="color: white; font-size: 60px">Space</h1>
+        <table class="myTable" border="1" width="85%" height="1000px">
+            <tr height="110px">
+
+                <td>
+                    <center>
+                        <a href="Home.aspx">
+     <img src="images/תמונה- דף בית.png" width="125" height="95" />
+ </a>
+                        <a href="Entering.aspx">
+                            <img src="images/תמונה כניסה.png" width="125" height="95" />
+
+                        </a>
+                         <a href="signUP.aspx">
+     <img src="images/תמונה הרשמה.png" width="125" height="95" />
+ </a>
+                        <a href="Home.aspx">
+                            <img src="images/תמונה- דף בית.png" width="125" height="95" />
+                        </a>
+                        <a href="about.aspx">
+                            <img src="images/תמונה אודות.png" width="125" height="95" />
+                        </a>
+                        <a href="Gallery.aspx">
+                            <img src="images/תמונה גלריה.png" width="125" height="95" />
+                        </a>
+                        <a href="Boss.aspx">
+                            <img src="images/תמונה מנהל.png" width="125" height="95" />
+                        </a>
+                        <a href="simple.aspx">
+                            <img src="images/תמונה חיפוש פשוט.png" width="125" height="95" />
+                        </a>
+                        <a href="compSearch.aspx">
+                            <img src="images/תמונה חיפוש מורכב.png" width="125" height="95" />
+                        </a>
+                        <a href="updatingDetails.aspx">
+                            <img src="images/תמונה עדכון פרטים.png" width="125" height="95" />
+                        </a>
+                        <a href="exit.aspx">
+                            <img src="images/תמונה יציאה.png" width="125" height="95" />
+                        </a>
+
+
+                    </center>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="vertical-align: top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+
+
+
+        <h1 style="font-size:45px; color:white" ">Space</h1>
+    </center>
 </body>
 </html>
